@@ -14,10 +14,10 @@
     /* font-color */
     --fc-white: #ffffff;
     --fc-off-white: #fafafa;
-    --white100:#fcfffe;
+    --white100: #fcfffe;
     --white200: #FAFAFA;
     --blur-white: #01010140;
-    --input-clr:#fdfdfe;
+    --input-clr: #fdfdfe;
     --fc-black: #000000;
     --fc-black-100: #010101;
     --fc-blue: #1219d2;
@@ -33,7 +33,7 @@
     --piech: #e66e9a;
     --yellow: #d1b35e;
     --green: #98dab3;
-    --accordiontext:#b5b3b7;
+    --accordiontext: #b5b3b7;
 
 }
 
@@ -44,12 +44,15 @@
 .clr-off-white {
     color: var(--fc-off-white);
 }
+
 .clr-white100 {
     color: var(--white100);
 }
+
 .clr-white200 {
     color: var(--white200);
 }
+
 .clr-black {
     color: var(--fc-black);
 }
@@ -65,7 +68,8 @@
 .clr-gray200 {
     color: var(--gray200);
 }
-.clr-gray300{
+
+.clr-gray300 {
     color: var(--accordiontext);
 }
 
@@ -77,6 +81,7 @@
 .bg-clr-black {
     background-color: var(--fc-black);
 }
+
 .bg-clr-black-100 {
     background-color: var(--fc-black-100);
 }

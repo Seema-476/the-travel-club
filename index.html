@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="./assets/images/fav-icon.png">
@@ -20,742 +20,797 @@
 </head>
 
 <body class="bg-pageclr">
-    <header class="herosectionbg">
-        <nav class="navbg d-flex">
-            <div class="container max-w-1140">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex align-items-center">
-                        <a href=""><img src="./assets/images/fav-icon.png" alt="favicon"></a>
-                        <a class="font-Racing-Sans-One fw-normal text-28_33 lh35_7 clr-off-white mb-0 ps-1" href="">The
-                            Travel
-                            Club</a>
+    <div class="overflow-x-hidden">
+        <header class="herosectionbg position-relative">
+            <nav class="navbg d-flex align-items-center">
+                <div class="container max-w-1140">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <a href=""><img src="./assets/images/webp/fav-icon.webp" alt="favicon"></a>
+                            <a class="font-Racing-Sans-One fw-normal text-28_33 lh35_7 clr-off-white mb-0 ps-1"
+                                href="">The
+                                Travel
+                                Club</a>
+                        </div>
+                        <div class="menuicon" onclick="opennav()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="d-flex ps-0 mb-0 gap-32 align-items-center menulist" id="navlist">
+                            <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
+                                    href="#Home">Home</a>
+                            </li>
+                            <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
+                                    href="#Token">Token</a>
+                            </li>
+                            <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
+                                    href="#FAQs">FAQs</a>
+                            </li>
+                            <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
+                                    href="#About">About</a>
+                            </li>
+                            <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
+                                    href="#ContactUs">Contact Us</a></li>
+                            <li><button
+                                    class="btnconnect font-poppins fw-semibold text-16 lh24 clr-white d-lg-none d-block">Connect
+                                    Wallet</button></li>
+                        </ul>
+                        <div class=" d-lg-block d-none"><button
+                                class="btnconnect font-poppins fw-semibold text-16 lh24 clr-white">Connect
+                                Wallet</button></div>
                     </div>
-                    <div class="menuicon" onclick="opennav()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="d-flex ps-0 mb-0 gap-32 align-items-center menulist" id="navlist">
-                        <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
-                                href="#Home">Home</a>
-                        </li>
-                        <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
-                                href="#Token">Token</a>
-                        </li>
-                        <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
-                                href="#FAQs">FAQs</a>
-                        </li>
-                        <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
-                                href="#About">About</a>
-                        </li>
-                        <li><a class="font-poppins fw-medium text-16 lh24 clr-white underline" onclick="opennav()"
-                                href="#ContactUs">Contact Us</a></li>
-                        <li><button
-                                class="btnconnect font-poppins fw-semibold text-16 lh24 clr-white d-lg-none d-block">Connect
-                                Wallet</button></li>
-                    </ul>
-                    <div class=" d-lg-block d-none"><button
-                            class="btnconnect font-poppins fw-semibold text-16 lh24 clr-white">Connect
-                            Wallet</button></div>
                 </div>
-            </div>
-        </nav>
-        <div class="heropy" data-aos="zoom-out">
-            <div class="container max-w-1140">
-                <h1 class="font-sans-serif fw-normal text-64 lh75_2 clr-white mb-0 text-center mainheading">Tokenized And
-                    Decentralized
-                    <br><span class="bgline position-relative z-1">Travel Platform</span>
-                </h1>
-                <div class="travelbox mx-auto position-relative z-1">
-                    <div class="d-flex gap20 justify-content-center overflow-auto no-scrollbar">
-                        <span
-                            class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Stays</span>
-                        <span
-                            class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Flights</span>
-                        <span
-                            class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Cars</span>
-                        <span
-                            class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Packages</span>
-                        <span
-                            class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor whitespace">Things
-                            To
-                            Do</span>
-                        <span
-                            class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Cruises</span>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="dropdown d-flex  align-items-center justify-content-end pb10 pt29">
-                            <p class="font-poppins fw-normal text-14 lh21 clr-white mb-0 cursor">1 Room, 2 Travelers</p>
-                            <span class="ps-2 cursor"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
-                                </svg>
-                            </span>
-                            <div class="dropdown-content">
-                                <p class="font-poppins fw-normal text-14 lh21 clr-white mb-0">1 Room, 2 Travelers</p>
-                                <p class="font-poppins fw-normal text-14 lh21 clr-white mb-0">2 Room, 4 Travelers</p>
-                            </div>
+            </nav>
+            <div class="heropy position-relative z-2" data-aos="zoom-out" id="Home">
+                <div class="container max-w-1140">
+                    <h1 class="font-sans-serif fw-normal text-64 lh75_2 clr-white mb-0 text-center mainheading">
+                        Tokenized And
+                        Decentralized
+                        <br><span class="bgline position-relative z-1">Travel Platform</span>
+                    </h1>
+                    <div class="travelbox mx-auto position-relative z-1">
+                        <div class="d-flex gap20 justify-content-center overflow-auto no-scrollbar">
+                            <span
+                                class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Stays</span>
+                            <span
+                                class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Flights</span>
+                            <span
+                                class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Cars</span>
+                            <span
+                                class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Packages</span>
+                            <span
+                                class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor whitespace">Things
+                                To
+                                Do</span>
+                            <span
+                                class="font-poppins fw-medium text-16 lh24 clr-white mb-0 underline pb-1 cursor">Cruises</span>
                         </div>
-                    </div>
-                    <div class="row pb10">
-                        <div class="col-md-6 col-12 d-flex align-items-center position-relative z-2">
-                            <div class="locationborder w-100 d-flex align-items-center">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M12 1.5918C9.81276 1.59438 7.71584 2.4644 6.16923 4.01102C4.62261 5.55763 3.75259 7.65455 3.75001 9.8418C3.74739 11.6292 4.33124 13.3681 5.41201 14.7918C5.41201 14.7918 5.63701 15.088 5.67376 15.1308L12 22.5918L18.3293 15.127C18.3623 15.0873 18.588 14.7918 18.588 14.7918L18.5888 14.7895C19.669 13.3665 20.2526 11.6284 20.25 9.8418C20.2474 7.65455 19.3774 5.55763 17.8308 4.01102C16.2842 2.4644 14.1873 1.59438 12 1.5918ZM12 12.8418C11.4067 12.8418 10.8266 12.6658 10.3333 12.3362C9.83995 12.0066 9.45543 11.538 9.22837 10.9898C9.00131 10.4417 8.9419 9.83847 9.05765 9.25653C9.17341 8.67458 9.45913 8.14003 9.87869 7.72048C10.2982 7.30092 10.8328 7.0152 11.4147 6.89944C11.9967 6.78369 12.5999 6.8431 13.1481 7.07016C13.6962 7.29722 14.1648 7.68174 14.4944 8.17509C14.8241 8.66843 15 9.24845 15 9.8418C14.999 10.6371 14.6826 11.3996 14.1202 11.962C13.5578 12.5244 12.7954 12.8408 12 12.8418Z"
-                                        fill="#FAFAFA" />
-                                </svg>
-                                <input type="text" placeholder="Going To"
-                                    class="travellocation font-poppins fw-light text-16 lh24 w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-md-0 mt-3 d-flex align-items-center">
-                            <div class="dateborder w-100 d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                        <div class="d-flex justify-content-end">
+                            <div class="dropdown d-flex  align-items-center justify-content-end pb10 pt29">
+                                <p class="font-poppins fw-normal text-14 lh21 clr-white mb-0 cursor">1 Room, 2 Travelers
+                                </p>
+                                <span class="ps-2 cursor"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.41667 9.45H4.27778V11.55H6.41667V9.45ZM10.6944 9.45H8.55556V11.55H10.6944V9.45ZM14.9722 9.45H12.8333V11.55H14.9722V9.45ZM17.1111 2.1H16.0417V0H13.9028V2.1H5.34722V0H3.20833V2.1H2.13889C1.57162 2.1 1.02759 2.32125 0.626466 2.71508C0.225346 3.1089 0 3.64305 0 4.2V18.9C0 19.457 0.225346 19.9911 0.626466 20.3849C1.02759 20.7787 1.57162 21 2.13889 21H17.1111C17.6784 21 18.2224 20.7787 18.6235 20.3849C19.0247 19.9911 19.25 19.457 19.25 18.9V4.2C19.25 3.64305 19.0247 3.1089 18.6235 2.71508C18.2224 2.32125 17.6784 2.1 17.1111 2.1ZM17.1111 18.9H2.13889V7.35H17.1111V18.9Z"
-                                            fill="white" />
+                                        <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
                                     </svg>
-                                    <p class="font-poppins fw-light text-10 lh15 clr-white mb-0 ps-2">Check-In <br>
-                                        <span class="text-16 lh24">Jun 29</span>
+                                </span>
+                                <div class="dropdown-content">
+                                    <p class="font-poppins fw-normal text-14 lh21 clr-white mb-0">1 Room, 2 Travelers
+                                    </p>
+                                    <p class="font-poppins fw-normal text-14 lh21 clr-white mb-0">2 Room, 4 Travelers
                                     </p>
                                 </div>
-                                <div class="d-flex flex-column gap-1">
-                                        <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            </div>
+                        </div>
+                        <div class="row pb10">
+                            <div class="col-md-6 col-12 d-flex align-items-center position-relative z-2">
+                                <div class="locationborder w-100 d-flex align-items-center">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 1.5918C9.81276 1.59438 7.71584 2.4644 6.16923 4.01102C4.62261 5.55763 3.75259 7.65455 3.75001 9.8418C3.74739 11.6292 4.33124 13.3681 5.41201 14.7918C5.41201 14.7918 5.63701 15.088 5.67376 15.1308L12 22.5918L18.3293 15.127C18.3623 15.0873 18.588 14.7918 18.588 14.7918L18.5888 14.7895C19.669 13.3665 20.2526 11.6284 20.25 9.8418C20.2474 7.65455 19.3774 5.55763 17.8308 4.01102C16.2842 2.4644 14.1873 1.59438 12 1.5918ZM12 12.8418C11.4067 12.8418 10.8266 12.6658 10.3333 12.3362C9.83995 12.0066 9.45543 11.538 9.22837 10.9898C9.00131 10.4417 8.9419 9.83847 9.05765 9.25653C9.17341 8.67458 9.45913 8.14003 9.87869 7.72048C10.2982 7.30092 10.8328 7.0152 11.4147 6.89944C11.9967 6.78369 12.5999 6.8431 13.1481 7.07016C13.6962 7.29722 14.1648 7.68174 14.4944 8.17509C14.8241 8.66843 15 9.24845 15 9.8418C14.999 10.6371 14.6826 11.3996 14.1202 11.962C13.5578 12.5244 12.7954 12.8408 12 12.8418Z"
+                                            fill="#FAFAFA" />
+                                    </svg>
+                                    <input type="text" placeholder="Going To"
+                                        class="travellocation font-poppins fw-light text-16 lh24 w-100">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12 mt-md-0 mt-3 d-flex align-items-center">
+                                <div class="dateborder w-100 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.41667 9.45H4.27778V11.55H6.41667V9.45ZM10.6944 9.45H8.55556V11.55H10.6944V9.45ZM14.9722 9.45H12.8333V11.55H14.9722V9.45ZM17.1111 2.1H16.0417V0H13.9028V2.1H5.34722V0H3.20833V2.1H2.13889C1.57162 2.1 1.02759 2.32125 0.626466 2.71508C0.225346 3.1089 0 3.64305 0 4.2V18.9C0 19.457 0.225346 19.9911 0.626466 20.3849C1.02759 20.7787 1.57162 21 2.13889 21H17.1111C17.6784 21 18.2224 20.7787 18.6235 20.3849C19.0247 19.9911 19.25 19.457 19.25 18.9V4.2C19.25 3.64305 19.0247 3.1089 18.6235 2.71508C18.2224 2.32125 17.6784 2.1 17.1111 2.1ZM17.1111 18.9H2.13889V7.35H17.1111V18.9Z"
+                                                fill="white" />
+                                        </svg>
+                                        <p class="font-poppins fw-light text-10 lh15 clr-white mb-0 ps-2">Check-In <br>
+                                            <span class="text-16 lh24">Jun 29</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                        <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M2.12476 13.4576H14.8748C15.0038 13.4572 15.1304 13.4216 15.2407 13.3546C15.3511 13.2877 15.4411 13.1919 15.5011 13.0776C15.561 12.9632 15.5887 12.8347 15.581 12.7059C15.5734 12.577 15.5308 12.4527 15.4577 12.3462L9.08271 3.13791C8.81851 2.75611 8.18242 2.75611 7.91751 3.13791L1.54251 12.3462C1.46871 12.4524 1.42544 12.5769 1.41739 12.7059C1.40934 12.835 1.43681 12.9638 1.49683 13.0784C1.55684 13.1929 1.64711 13.2889 1.75781 13.3557C1.86852 13.4226 1.99543 13.4578 2.12476 13.4576Z"
                                                 fill="#F8F8F8" />
                                         </svg>
-                                        <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M14.8752 3.54239H2.12524C1.99616 3.54279 1.86962 3.57839 1.75926 3.64536C1.64891 3.71233 1.5589 3.80813 1.49894 3.92244C1.43898 4.03676 1.41132 4.16527 1.41896 4.29413C1.4266 4.42299 1.46924 4.54733 1.54228 4.65376L7.91729 13.8621C8.18149 14.2439 8.81758 14.2439 9.08249 13.8621L15.4575 4.65376C15.5313 4.54755 15.5746 4.42315 15.5826 4.29407C15.5907 4.165 15.5632 4.03618 15.5032 3.92162C15.4432 3.80706 15.3529 3.71114 15.2422 3.64428C15.1315 3.57742 15.0046 3.54218 14.8752 3.54239ZM8.50024 12.2145L3.47674 4.95905H13.5237L8.50024 12.2145Z"
                                                 fill="#F8F8F8" />
                                         </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12 mt-md-0 mt-3 d-flex align-items-center">
+                                <div class="dateborder w-100 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.41667 9.45H4.27778V11.55H6.41667V9.45ZM10.6944 9.45H8.55556V11.55H10.6944V9.45ZM14.9722 9.45H12.8333V11.55H14.9722V9.45ZM17.1111 2.1H16.0417V0H13.9028V2.1H5.34722V0H3.20833V2.1H2.13889C1.57162 2.1 1.02759 2.32125 0.626466 2.71508C0.225346 3.1089 0 3.64305 0 4.2V18.9C0 19.457 0.225346 19.9911 0.626466 20.3849C1.02759 20.7787 1.57162 21 2.13889 21H17.1111C17.6784 21 18.2224 20.7787 18.6235 20.3849C19.0247 19.9911 19.25 19.457 19.25 18.9V4.2C19.25 3.64305 19.0247 3.1089 18.6235 2.71508C18.2224 2.32125 17.6784 2.1 17.1111 2.1ZM17.1111 18.9H2.13889V7.35H17.1111V18.9Z"
+                                                fill="white" />
+                                        </svg>
+                                        <p class="font-poppins fw-light text-10 lh15 clr-white mb-0 ps-2">Check-In <br>
+                                            <span class="text-16 lh24">Jun 29</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                        <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.12476 13.4576H14.8748C15.0038 13.4572 15.1304 13.4216 15.2407 13.3546C15.3511 13.2877 15.4411 13.1919 15.5011 13.0776C15.561 12.9632 15.5887 12.8347 15.581 12.7059C15.5734 12.577 15.5308 12.4527 15.4577 12.3462L9.08271 3.13791C8.81851 2.75611 8.18242 2.75611 7.91751 3.13791L1.54251 12.3462C1.46871 12.4524 1.42544 12.5769 1.41739 12.7059C1.40934 12.835 1.43681 12.9638 1.49683 13.0784C1.55684 13.1929 1.64711 13.2889 1.75781 13.3557C1.86852 13.4226 1.99543 13.4578 2.12476 13.4576Z"
+                                                fill="#F8F8F8" />
+                                        </svg>
+                                        <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.8752 3.54239H2.12524C1.99616 3.54279 1.86962 3.57839 1.75926 3.64536C1.64891 3.71233 1.5589 3.80813 1.49894 3.92244C1.43898 4.03676 1.41132 4.16527 1.41896 4.29413C1.4266 4.42299 1.46924 4.54733 1.54228 4.65376L7.91729 13.8621C8.18149 14.2439 8.81758 14.2439 9.08249 13.8621L15.4575 4.65376C15.5313 4.54755 15.5746 4.42315 15.5826 4.29407C15.5907 4.165 15.5632 4.03618 15.5032 3.92162C15.4432 3.80706 15.3529 3.71114 15.2422 3.64428C15.1315 3.57742 15.0046 3.54218 14.8752 3.54239ZM8.50024 12.2145L3.47674 4.95905H13.5237L8.50024 12.2145Z"
+                                                fill="#F8F8F8" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-md-0 mt-3 d-flex align-items-center">
-                            <div class="dateborder w-100 d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.41667 9.45H4.27778V11.55H6.41667V9.45ZM10.6944 9.45H8.55556V11.55H10.6944V9.45ZM14.9722 9.45H12.8333V11.55H14.9722V9.45ZM17.1111 2.1H16.0417V0H13.9028V2.1H5.34722V0H3.20833V2.1H2.13889C1.57162 2.1 1.02759 2.32125 0.626466 2.71508C0.225346 3.1089 0 3.64305 0 4.2V18.9C0 19.457 0.225346 19.9911 0.626466 20.3849C1.02759 20.7787 1.57162 21 2.13889 21H17.1111C17.6784 21 18.2224 20.7787 18.6235 20.3849C19.0247 19.9911 19.25 19.457 19.25 18.9V4.2C19.25 3.64305 19.0247 3.1089 18.6235 2.71508C18.2224 2.32125 17.6784 2.1 17.1111 2.1ZM17.1111 18.9H2.13889V7.35H17.1111V18.9Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p class="font-poppins fw-light text-10 lh15 clr-white mb-0 ps-2">Check-In <br>
-                                        <span class="text-16 lh24">Jun 29</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex flex-column gap-1">
-                                    <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.12476 13.4576H14.8748C15.0038 13.4572 15.1304 13.4216 15.2407 13.3546C15.3511 13.2877 15.4411 13.1919 15.5011 13.0776C15.561 12.9632 15.5887 12.8347 15.581 12.7059C15.5734 12.577 15.5308 12.4527 15.4577 12.3462L9.08271 3.13791C8.81851 2.75611 8.18242 2.75611 7.91751 3.13791L1.54251 12.3462C1.46871 12.4524 1.42544 12.5769 1.41739 12.7059C1.40934 12.835 1.43681 12.9638 1.49683 13.0784C1.55684 13.1929 1.64711 13.2889 1.75781 13.3557C1.86852 13.4226 1.99543 13.4578 2.12476 13.4576Z"
-                                            fill="#F8F8F8" />
-                                    </svg>
-                                    <svg class="cursor opacity70" width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.8752 3.54239H2.12524C1.99616 3.54279 1.86962 3.57839 1.75926 3.64536C1.64891 3.71233 1.5589 3.80813 1.49894 3.92244C1.43898 4.03676 1.41132 4.16527 1.41896 4.29413C1.4266 4.42299 1.46924 4.54733 1.54228 4.65376L7.91729 13.8621C8.18149 14.2439 8.81758 14.2439 9.08249 13.8621L15.4575 4.65376C15.5313 4.54755 15.5746 4.42315 15.5826 4.29407C15.5907 4.165 15.5632 4.03618 15.5032 3.92162C15.4432 3.80706 15.3529 3.71114 15.2422 3.64428C15.1315 3.57742 15.0046 3.54218 14.8752 3.54239ZM8.50024 12.2145L3.47674 4.95905H13.5237L8.50024 12.2145Z"
-                                            fill="#F8F8F8" />
-                                    </svg>
-                                </div>
-                            </div>
+                        <div class="d-flex gap30 position-relative z-2">
+                            <label class="custom-checkbox font-poppins fw-light text-16 lh24 clr-white mb-0">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Add A Flight
+                            </label>
+                            <label class="custom-checkbox font-poppins fw-light text-16 lh24 clr-white mb-0">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Add A Car
+                            </label>
                         </div>
-                    </div>
-                    <div class="d-flex gap30 position-relative z-2">
-                        <label class="custom-checkbox font-poppins fw-light text-16 lh24 clr-white mb-0">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            Add A Flight
-                        </label>
-                        <label class="custom-checkbox font-poppins fw-light text-16 lh24 clr-white mb-0">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            Add A Car
-                        </label>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button class="font-poppins fw-semibold text-16 lh24 clr-white btnsearch">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="position-relative aboutpy" id="About">
-        <div class="aboutelipleft position-absolute d-lg-block d-none">
-        </div>
-        <div class="herosection-star-right position-absolute d-lg-block d-none">
-            <img src="./assets/images/herosection-star-right.png" alt="star">
-        </div>
-        <div class="container max-w-1140">
-            <div class="row">
-                <div data-aos="fade-right" class="col-lg-6 col-12 d-flex align-items-center">
-                    <div class="blank">
-                        <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 heading2">About Us</h2>
-                        <p class="font-poppins fw-normal text-16 lh24 clr-white opacity80 mb-0 abouttext max-w-509">We
-                            are building a web3
-                            tokenized and decentralized travel
-                            platform. Our expertise is in search related sites, and
-                            blockchain technology. </p>
-                        <p class="font-poppins fw-normal text-16 lh24 clr-white opacity80 mb-0 max-w-509">We will be
-                            creating a DAO with rewards
-                            for users. A DAO is a Decentralized Autonomous Organization and is something
-                            fairly common in the web3 and blockchain space. A DAO can be described as a transparent
-                            governing body, where each
-                            member typically shares a common goal, which is the best interest of the platform.</p>
-                        <button class="font-poppins fw-semibold text-16 lh24 clr-white btnreward">Get Rewards</button>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-center mt-lg-0 mt-5" data-aos="fade-left">
-                    <img src="./assets/images/aboutimg.png" alt="about" class="w-100 max-w-535">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  grid -->
-    <section class="popularpy position-relative">
-        <div class="aboutsection-left-star position-absolute d-lg-block d-none">
-            <img src="./assets/images/aboutsection-left-star.png" alt="left">
-        </div>
-        <div class="gridleftelip position-absolute d-lg-block d-none">
-            <img src="./assets/images/gridleftelip.png" alt="elip">
-        </div>
-        <div class="gridrightelip position-absolute d-lg-block d-none">
-            <img src="./assets/images/gridrightelip.png" alt="elip">
-        </div>
-        <div class="gridstarimg position-absolute d-lg-block d-none">
-            <img src="./assets/images/gridstarimg.png" alt="grid">
-        </div>
-        <div class="container max-w-1140">
-            <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white text-center mb-0 popular">Popular Destinations
-            </h2>
-            <div class="grid-box" data-aos="zoom-in">
-                <div class="grid-item-1 position-relative gridimage">
-                    <img src="./assets/images/gridimg1.png" alt="img" class="w-100">
-                    <div class="shilohbg position-absolute">
-                        <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-                <div class="grid-item-2 gridimage position-relative">
-                    <img src="./assets/images/gridimg2.png" alt="img" class="w-100 h-100">
-                    <div class="shilohbg position-absolute">
-                        <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-                <div class="grid-item-3 gridimage position-relative">
-                    <img src="./assets/images/gridimg3.png" alt="img" class="w-100 h-100">
-                    <div class="shilohbg position-absolute">
-                        <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-                <div class="grid-item-4 gridimage position-relative">
-                    <img src="./assets/images/gridimg4.png" alt="img" class="w-100 h-100">
-                    <div class="shilohbg position-absolute">
-                        <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-                <div class="grid-item-5 gridimage position-relative">
-                    <img src="./assets/images/gridimg5.png" alt="img" class="w-100 h-100">
-                    <div class="shilohbg position-absolute">
-                        <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-                <div class="grid-item-6 gridimage position-relative">
-                    <img src="./assets/images/gridimg6.png" alt="img" class="w-100">
-                    <div class="shilohbg position-absolute">
-                        <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  slider -->
-    <section class="sliderpy position-relative">
-        <div class="slider-left-elip position-absolute d-lg-block d-none">
-            <img src="./assets/images/slider-left-elip.png" alt="elip">
-        </div>
-        <div class="slider-right-elip position-absolute d-lg-block d-none">
-            <img src="./assets/images/sliderrightelip.png" alt="elip">
-        </div>
-        <div class="container max-w-1140">
-            <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white text-center mb-0 pb50">Member Deals</h2>
-            <div class="slider-list responsive" data-aos="zoom-in">
-                <div class="slider-box">
-                    <div class="slider-card position-relative">
-                        <img src="./assets/images/slider-cardimg1.png" alt="card" class="w-100 sliderimg">
-                        <div class="percentagebg position-absolute">
-                            <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
-                        </div>
-                        <div class="cardcontent">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
-                                        <span class="clr-gray text-decoration-line-through">$1,999</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex align-items-center number">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
-                                            fill="#FFAA4A" />
-                                    </svg>
-                                    <span class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
-                                </div>
-                            </div>
-                            <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
-                                Mauris Hac
-                                Dignissi Amet Facilisi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-box">
-                    <div class="slider-card position-relative">
-                        <img src="./assets/images/slider-cardimg2.png" alt="card" class="w-100 sliderimg">
-                        <div class="percentagebg position-absolute">
-                            <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
-                        </div>
-                        <div class="cardcontent">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
-                                        <span class="clr-gray text-decoration-line-through">$1,999</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex align-items-center number">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
-                                            fill="#FFAA4A" />
-                                    </svg>
-                                    <span class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
-                                </div>
-                            </div>
-                            <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
-                                Mauris Hac
-                                Dignissi Amet
-                                Facilisi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-box">
-                    <div class="slider-card position-relative">
-                        <img src="./assets/images/slider-cardimg3.png" alt="card" class="w-100 sliderimg">
-                        <div class="percentagebg position-absolute">
-                            <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
-                        </div>
-                        <div class="cardcontent">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
-                                        <span class="clr-gray text-decoration-line-through">$1,999</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex align-items-center number">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
-                                            fill="#FFAA4A" />
-                                    </svg>
-                                    <span class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
-                                </div>
-                            </div>
-                            <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
-                                Mauris Hac
-                                Dignissi Amet
-                                Facilisi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-box">
-                    <div class="slider-card position-relative">
-                        <img src="./assets/images/slider-cardimg1.png" alt="card" class="w-100 sliderimg">
-                        <div class="percentagebg position-absolute">
-                            <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
-                        </div>
-                        <div class="cardcontent">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
-                                        <span class="clr-gray text-decoration-line-through">$1,999</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex align-items-center number">
-                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
-                                            fill="#FFAA4A" />
-                                    </svg>
-                                    <span class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
-                                </div>
-                            </div>
-                            <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
-                                Mauris Hac
-                                Dignissi Amet
-                                Facilisi.</p>
+                        <div class="d-flex justify-content-center">
+                            <button class="font-poppins fw-semibold text-16 lh24 clr-white btnsearch">Search</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Tokenomics -->
-    <section class="tokeconomicsbg position-relative" id="Token">
-        <div class="blank"><img src="./assets/images/tokeconomicslayer.png" alt="layer" class="w-100 max-h-215"></div>
-        <div class="position-absolute d-lg-block d-none tokeconomicsrightstar">
-            <img src="./assets/images/tokeconomicsrightstar.png" alt="star">
-        </div>
-        <div class="container max-w-1140">
-            <div class="text-center">
-                <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 pb50">Tokenomics: Powering Digital
-                    Economies</h2>
+            <div class="herolayer"></div>
+        </header>
+        <section class="position-relative aboutpy" id="About">
+            <div class="aboutelipleft position-absolute d-lg-block d-none">
             </div>
-            <div class="row">
-                <div class="col-lg-5 col-12 d-flex align-items-center travelcircle" data-aos="fade-right">
-                    <img src="./assets/images/the-travel-club.png" alt="travel" class="w-100 max-w-406">
+            <div class="herosection-star-right position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/herosection-star-right.webp" alt="star">
+            </div>
+            <div class="container max-w-1140">
+                <div class="row">
+                    <div data-aos="fade-right" class="col-lg-6 col-12 d-flex align-items-center">
+                        <div class="blank">
+                            <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 heading2">About Us</h2>
+                            <p class="font-poppins fw-normal text-16 lh24 clr-white opacity80 mb-0 abouttext max-w-509">
+                                We
+                                are building a web3
+                                tokenized and decentralized travel
+                                platform. Our expertise is in search related sites, and
+                                blockchain technology. </p>
+                            <p class="font-poppins fw-normal text-16 lh24 clr-white opacity80 mb-0 max-w-509">We will be
+                                creating a DAO with rewards
+                                for users. A DAO is a Decentralized Autonomous Organization and is something
+                                fairly common in the web3 and blockchain space. A DAO can be described as a transparent
+                                governing body, where each
+                                member typically shares a common goal, which is the best interest of the platform.</p>
+                            <button class="font-poppins fw-semibold text-16 lh24 clr-white btnreward">Get
+                                Rewards</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-center mt-lg-0 mt-5" data-aos="fade-left">
+                        <img src="./assets/images/webp/aboutimg.webp" alt="about" class="w-100 max-w-535">
+                    </div>
                 </div>
-                <div class="col-lg-7 col-12 mt-lg-0 mt-5" data-aos="fade-left">
-                    <div class="metricsbox">
-                        <p class="font-sans-serif fw-normal text-36 lh42_3 clr-white mb-0 text-center metrics">Travel Club
-                            Metrics</p>
-                        <div class="d-flex pb18">
-                            <p class="font-poppins fw-normal text-20 lh30 clr-gray100 mb-0 opacity80">Max supply:</p>
-                            <p class="font-poppins fw-semibold text-20 lh30 clr-white mb-0 max">700 000 000</p>
+            </div>
+        </section>
+        <!--  grid -->
+        <section class="popularpy position-relative" id="Destinations">
+            <div class="aboutsection-left-star position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/aboutsection-left-star.webp" alt="left">
+            </div>
+            <div class="gridleftelip position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/gridleftelip.webp" alt="elip">
+            </div>
+            <div class="gridrightelip position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/gridrightelip.webp" alt="elip">
+            </div>
+            <div class="gridstarimg position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/gridstarimg.webp" alt="grid">
+            </div>
+            <div class="container max-w-1140">
+                <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white text-center mb-0 popular">Popular
+                    Destinations
+                </h2>
+                <div class="grid-box" data-aos="zoom-in">
+                    <div class="grid-item-1 position-relative gridimage">
+                        <img src="./assets/images/webp/gridimg1.webp" alt="img" class="w-100">
+                        <div class="shilohbg position-absolute">
+                            <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063
+                            </p>
                         </div>
-                        <div class="d-flex pb18">
-                            <p class="font-poppins fw-normal text-20 lh30 clr-gray100 mb-0 opacity80">Total supply:</p>
-                            <p class="font-poppins fw-semibold text-20 lh30 clr-white mb-0 total">345 620 131</p>
+                    </div>
+                    <div class="grid-item-2 gridimage position-relative">
+                        <img src="./assets/images/webp/gridimg2.webp" alt="img" class="w-100 h-100">
+                        <div class="shilohbg position-absolute">
+                            <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063
+                            </p>
                         </div>
-                        <div class="d-flex">
-                            <p class="font-poppins fw-normal text-20 lh30 clr-gray100 mb-0 opacity80">Circulating
-                                supply:</p>
-                            <p class="font-poppins fw-semibold text-20 lh30 clr-white mb-0 supply">307 909 912</p>
+                    </div>
+                    <div class="grid-item-3 gridimage position-relative">
+                        <img src="./assets/images/webp/gridimg3.webp" alt="img" class="w-100 h-100">
+                        <div class="shilohbg position-absolute">
+                            <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063
+                            </p>
                         </div>
-                        <div class="row pt54">
-                            <div class="col-sm-4 col-12">
-                                <div class="borderleftblue p28">
-                                    <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0">Farms/Launchpools
-                                    </p>
-                                    <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">80.7%</p>
-                                </div>
+                    </div>
+                    <div class="grid-item-4 gridimage position-relative">
+                        <img src="./assets/images/webp/gridimg4.webp" alt="img" class="w-100 h-100">
+                        <div class="shilohbg position-absolute">
+                            <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-item-5 gridimage position-relative">
+                        <img src="./assets/images/webp/gridimg5.webp" alt="img" class="w-100 h-100">
+                        <div class="shilohbg position-absolute">
+                            <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-item-6 gridimage position-relative">
+                        <img src="./assets/images/webp/gridimg6.webp" alt="img" class="w-100">
+                        <div class="shilohbg position-absolute">
+                            <p class="font-poppins fw-medium text-16 lh24 clr-white200 mb-0">Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  slider -->
+        <section class="sliderpy position-relative" id="PrivacyPolicy">
+            <div class="slider-left-elip position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/slider-left-elip.webp" alt="elip">
+            </div>
+            <div class="slider-right-elip position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/sliderrightelip.webp" alt="elip">
+            </div>
+            <div class="container max-w-1140">
+                <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white text-center mb-0 pb50">Member Deals</h2>
+                <div class="slider-list responsive" data-aos="zoom-in">
+                    <div class="slider-box">
+                        <div class="slider-card position-relative">
+                            <img src="./assets/images/webp/slider-cardimg1.webp" alt="card" class="w-100 sliderimg">
+                            <div class="percentagebg position-absolute">
+                                <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
                             </div>
-                            <div class="col-sm-4 col-6 ps42 mt-sm-0 mt-2">
-                                <div class="borderleftpurple p28">
-                                    <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0 whitespace">Referral
-                                        Program</p>
-                                    <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">4.3%</p>
+                            <div class="cardcontent">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
+                                            <span class="clr-gray text-decoration-line-through">$1,999</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center number">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                                fill="#FFAA4A" />
+                                        </svg>
+                                        <span
+                                            class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
+                                    </div>
                                 </div>
+                                <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
+                                    Mauris Hac
+                                    Dignissi Amet Facilisi.</p>
                             </div>
-                            <div class="col-sm-4 col-6 ps65 mt-sm-0 mt-2">
-                                <div class="borderleftpiech p28">
-                                    <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0">Team</p>
-                                    <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">9%</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="slider-box">
+                        <div class="slider-card position-relative">
+                            <img src="./assets/images/webp/slider-cardimg2.webp" alt="card" class="w-100 sliderimg">
+                            <div class="percentagebg position-absolute">
+                                <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
                             </div>
-                            <div class="col-sm-4 col-6 mt-sm-0 mt-2">
-                                <div class="borderleftyellow p28 safu">
-                                    <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0">SAFU</p>
-                                    <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">1%</p>
+                            <div class="cardcontent">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
+                                            <span class="clr-gray text-decoration-line-through">$1,999</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center number">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                                fill="#FFAA4A" />
+                                        </svg>
+                                        <span
+                                            class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
+                                    </div>
                                 </div>
+                                <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
+                                    Mauris Hac
+                                    Dignissi Amet
+                                    Facilisi.</p>
                             </div>
-                            <div class="col-sm-4 col-6 ps42 mt-sm-0 mt-2">
-                                <div class="borderleftgreen p28 safu">
-                                    <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0 whitespace">Investing
-                                        Fund</p>
-                                    <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">5%</p>
+                        </div>
+                    </div>
+                    <div class="slider-box">
+                        <div class="slider-card position-relative">
+                            <img src="./assets/images/webp/slider-cardimg3.webp" alt="card" class="w-100 sliderimg">
+                            <div class="percentagebg position-absolute">
+                                <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
+                            </div>
+                            <div class="cardcontent">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
+                                            <span class="clr-gray text-decoration-line-through">$1,999</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center number">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                                fill="#FFAA4A" />
+                                        </svg>
+                                        <span
+                                            class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
+                                    </div>
                                 </div>
+                                <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
+                                    Mauris Hac
+                                    Dignissi Amet
+                                    Facilisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-box">
+                        <div class="slider-card position-relative">
+                            <img src="./assets/images/webp/slider-cardimg1.webp" alt="card" class="w-100 sliderimg">
+                            <div class="percentagebg position-absolute">
+                                <span class="font-poppins fw-medium text-16 lh24 mb-0 clr-off-white">50% OFF</span>
+                            </div>
+                            <div class="cardcontent">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="font-sans-serif fw-normal text-24 lh28_2 clr-white mb-0 doller">$1,100
+                                            <span class="clr-gray text-decoration-line-through">$1,999</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center number">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                                fill="#FFAA4A" />
+                                        </svg>
+                                        <span
+                                            class="font-sans-serif fw-normal text-20 lh23_5 clr-white mb-0 ps-1">4.9</span>
+                                    </div>
+                                </div>
+                                <p class="font-poppins fw-semibold text-20 lh27_3 mb-0 clr-white opacity90">Et Fringilla
+                                    Mauris Hac
+                                    Dignissi Amet
+                                    Facilisi.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="blank"><img src="./assets/images/tokeconomicsdownlayer.png" alt="layer" class="w-100 max-h-189">
-        </div>
-    </section>
-    <!-- Meet Our Team -->
-    <section class="teampy position-relative">
-        <div class="teamsectionleftelip position-absolute d-lg-block d-none">
-            <img src="./assets/images/teamsectionleftelip.png" alt="elip">
-        </div>
-        <div class="teamsectionrightelip position-absolute d-xl-block d-none"></div>
-        <div class="teamsectionleftstar position-absolute d-lg-block d-none">
-            <img src="./assets/images/teamsectionleftstar.png" alt="star">
-        </div>
-        <div class="container max-w-1140">
-            <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 pb50 text-center">Meet Our Team</h2>
-            <div class="sliderlist2 teamresponsive" data-aos="zoom-in">
-                <div class="sliderbox2">
-                    <div class="teamcard">
-                        <img src="./assets/images/teamimage1.png" alt="slider" class="slider2-image w-100">
-                        <div class="slidertext">
-                            <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Darlene Robertson</p>
-                            <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sliderbox2">
-                    <div class="teamcard">
-                        <img src="./assets/images/teamimage2.png" alt="slider" class="slider2-image w-100">
-                        <div class="slidertext">
-                            <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Cameron Williamson</p>
-                            <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sliderbox2">
-                    <div class="teamcard">
-                        <img src="./assets/images/teamimage3.png" alt="slider" class="slider2-image w-100">
-                        <div class="slidertext">
-                            <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Brooklyn Simmons</p>
-                            <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sliderbox2">
-                    <div class="teamcard">
-                        <img src="./assets/images/teamimage2.png" alt="slider" class="slider2-image w-100">
-                        <div class="slidertext">
-                            <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Cameron Williamson</p>
-                            <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
+        </section>
+        <!-- Tokenomics -->
+        <section class="tokeconomicsbg position-relative margintop" id="Token">
+            <div class="blank"><img src="./assets/images/webp/tokeconomicslayer.webp" alt="layer"
+                    class="w-100 max-h-215"></div>
+            <div class="position-absolute d-lg-block d-none tokeconomicsrightstar">
+                <img src="./assets/images/webp/tokeconomicsrightstar.webp" alt="star">
             </div>
-        </div>
-    </section>
-    <!-- FAQS -->
-    <section class="faqpy position-relative">
-        <div class="faqrightelip position-absolute d-lg-block d-none"><img src="./assets/images/faqrightelip.png"
-                alt="elip"></div>
-        <div class="faqrightstar position-absolute d-lg-block d-none"><img src="./assets/images/faqrightstar.png"
-                alt="star"></div>
-        <div class="container max-w-1140">
-            <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 pb53 text-center">Frequently Asked Questions
-            </h2>
-            <div class="max-w-749 mx-auto" data-aos="zoom-in">
-                <div class="accordion mx-auto" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                <span class="max-w567">Q1. Rhoncus morbi sodales risus eget integer malesuada ultricies.
-                                    Magnis at ornare sit netus
-                                    velit.</span>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
-                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
-                                laoreet
-                                mattis risus tempus. Imperdiet
-                                a integer viverra rhoncus viverra nunc.
-                            </div>
-                        </div>
+            <div class="container max-w-1140">
+                <div class="text-center">
+                    <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 pb50">Tokenomics: Powering
+                        Digital
+                        Economies</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-12 d-flex align-items-center travelcircle" data-aos="fade-right">
+                        <img src="./assets/images/webp/the-travel-club.webp" alt="travel" class="w-100 max-w-406">
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white collapsed"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="max-w567">Q2. Habitant elementum nibh vitae adipiscing volutpat a
-                                    scelerisque neque.
-                                </span> </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
-                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
-                                laoreet
-                                mattis risus tempus.
+                    <div class="col-lg-7 col-12 mt-lg-0 mt-5" data-aos="fade-left">
+                        <div class="metricsbox">
+                            <p class="font-sans-serif fw-normal text-36 lh42_3 clr-white mb-0 text-center metrics">
+                                Travel Club
+                                Metrics</p>
+                            <div class="d-flex pb18">
+                                <p class="font-poppins fw-normal text-20 lh30 clr-gray100 mb-0 opacity80">Max supply:
+                                </p>
+                                <p class="font-poppins fw-semibold text-20 lh30 clr-white mb-0 max">700 000 000</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white collapsed"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <span class="max-w567">Q3. Condimentum cursus urna nulla et eget enim.
-                                </span> </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
-                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
-                                laoreet
-                                mattis risus tempus. Imperdiet
-                                a integer viverra rhoncus viverra nunc.
+                            <div class="d-flex pb18">
+                                <p class="font-poppins fw-normal text-20 lh30 clr-gray100 mb-0 opacity80">Total supply:
+                                </p>
+                                <p class="font-poppins fw-semibold text-20 lh30 clr-white mb-0 total">345 620 131</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white collapsed"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
-                                aria-expanded="false" aria-controls="collapsefour">
-                                <span class="max-w567">Q4.Vel egestas hendrerit pellentesque molestie fusce aliquet
-                                    gravida proin.
-                                </span> </button>
-                        </h2>
-                        <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
-                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
-                                laoreet
-                                mattis risus tempus.
+                            <div class="d-flex">
+                                <p class="font-poppins fw-normal text-20 lh30 clr-gray100 mb-0 opacity80">Circulating
+                                    supply:</p>
+                                <p class="font-poppins fw-semibold text-20 lh30 clr-white mb-0 supply">307 909 912</p>
+                            </div>
+                            <div class="row pt54">
+                                <div class="col-sm-4 col-12">
+                                    <div class="borderleftblue p28">
+                                        <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0">
+                                            Farms/Launchpools
+                                        </p>
+                                        <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">80.7%</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-6 ps42 mt-sm-0 mt-2">
+                                    <div class="borderleftpurple p28">
+                                        <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0 whitespace">
+                                            Referral
+                                            Program</p>
+                                        <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">4.3%</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-6 ps65 mt-sm-0 mt-2">
+                                    <div class="borderleftpiech p28">
+                                        <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0">Team</p>
+                                        <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">9%</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-6 mt-sm-0 mt-2">
+                                    <div class="borderleftyellow p28 safu">
+                                        <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0">SAFU</p>
+                                        <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">1%</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-6 ps42 mt-sm-0 mt-2">
+                                    <div class="borderleftgreen p28 safu">
+                                        <p class="font-poppins fw-normal text-16 lh24 clr-gray200 mb-0 whitespace">
+                                            Investing
+                                            Fund</p>
+                                        <p class="font-sans-serif fw-normal text-32 lh37_6 clr-white mb-0">5%</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <footer class="bg-clr-black-100 footerpy">
-        <div class="container max-w-1140">
-            <div class="row">
-                <div class="col-xl-3 col-12">
-                    <div class="d-flex align-items-center">
-                        <img src="./assets/images/footerlogo.png" alt="logo">
-                        <a href="" class="font-Racing-Sans-One fw-normal text-28_33 lh35_7 clr-white200">
-                            The Travel Club
-                        </a>
+            <div class="blank"><img src="./assets/images/webp/tokeconomicsdownlayer.webp" alt="layer"
+                    class="w-100 max-h-189">
+            </div>
+        </section>
+        <!-- Meet Our Team -->
+        <section class="teampy position-relative team" id="Partnership">
+            <div class="teamsectionleftelip position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/teamsectionleftelip.webp" alt="elip">
+            </div>
+            <div class="teamsectionrightelip position-absolute d-xl-block d-none"></div>
+            <div class="teamsectionleftstar position-absolute d-lg-block d-none">
+                <img src="./assets/images/webp/teamsectionleftstar.webp" alt="star">
+            </div>
+            <div class="container max-w-1140">
+                <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 pb50 text-center">Meet Our Team</h2>
+                <div class="sliderlist2 teamresponsive" data-aos="zoom-in">
+                    <div class="sliderbox2">
+                        <div class="teamcard">
+                            <img src="./assets/images/webp/teamimage1.webp" alt="slider" class="slider2-image w-100">
+                            <div class="slidertext">
+                                <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Darlene Robertson
+                                </p>
+                                <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="font-poppins fw-normal text-16 lh25_6 clr-white200 opacity70 mb-0 footertext">At congue
-                        consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna laoreet</p>
-                </div>
-                <div class="col-xl-9 col-12 mt-xl-0 mt-4">
-                    <div class="row justify-content-xl-end">
-                        <div class="col-lg-2 col-6">
-                            <ul class="mb-0 ps-0">
-                                <li class="company"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 clr-white200">Company</a></li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">About</a>
-                                </li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Privacy
-                                        Policy</a>
-                                </li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Partnership</a>
-                                </li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">FAQ</a>
-                                </li>
-                                <li class="contact"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Contact</a>
-                                </li>
-                            </ul>
+                    <div class="sliderbox2">
+                        <div class="teamcard">
+                            <img src="./assets/images/webp/teamimage2.webp" alt="slider" class="slider2-image w-100">
+                            <div class="slidertext">
+                                <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Cameron Williamson
+                                </p>
+                                <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-6">
-                            <ul class="mb-0 ps-0">
-                                <li class="company"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 clr-white200">Contact Us</a></li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">4517
-                                        Washington
-                                        Ave. Manchester, Kentucky 39495</a></li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">+123 456
-                                        7890,
-                                        +123
-                                        456 7890</a></li>
-                            </ul>
+                    </div>
+                    <div class="sliderbox2">
+                        <div class="teamcard">
+                            <img src="./assets/images/webp/teamimage3.webp" alt="slider" class="slider2-image w-100">
+                            <div class="slidertext">
+                                <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Brooklyn Simmons</p>
+                                <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-6 d-flex justify-content-lg-end mt-lg-0 mt-4">
-                            <ul class="mb-0 ps-0">
-                                <li class="company"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 clr-white200">Quick Links</a></li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Home</a>
-                                </li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">About
-                                    </a>
-                                </li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Token</a>
-                                </li>
-                                <li class="about"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">FAQ</a>
-                                </li>
-                                <li class="contact"><a href=""
-                                        class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Popular
-                                        Destinations</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-6 mt-lg-0 mt-4">
-                            <p class="company font-poppins fw-normal text-16 lh25_6 clr-white200 mb-0">Social Share</p>
-                            <div class="d-flex gap-30">
-                                <a href="https://x.com/i/flow/login" target="_blank"><svg class="svg" width="28" height="24" viewBox="0 0 28 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.804 1.76871C26.0929 1.77112 26.3756 1.8525 26.6215 2.00405C26.8675 2.1556 27.0673 2.37154 27.1993 2.62849C27.3313 2.88544 27.3905 3.17361 27.3705 3.46181C27.3505 3.75 27.2521 4.02723 27.0858 4.26348L25.49 6.5316C25.392 14.3207 22.787 19.6089 17.7469 22.2507C15.3451 23.4443 12.6915 24.0426 10.0099 23.9951C6.69401 24.0713 3.41735 23.2659 0.514696 21.6611C0.319433 21.5299 0.168521 21.3425 0.0818546 21.1238C-0.004812 20.9051 -0.0231644 20.6653 0.029217 20.4359C0.078256 20.2031 0.196719 19.9907 0.368972 19.8267C0.541225 19.6626 0.759171 19.5546 0.994049 19.517C2.944 19.2447 4.86417 18.7904 6.72944 18.1601C-1.62937 14.2931 0.193085 5.60046 0.989454 2.9311C1.06709 2.66608 1.21307 2.42615 1.41274 2.23538C1.61241 2.04462 1.85874 1.90973 2.12702 1.84425C2.39529 1.77877 2.67607 1.78501 2.94118 1.86234C3.20628 1.93967 3.44638 2.08537 3.63738 2.28481C6.08413 4.80598 9.32824 6.40233 12.8186 6.80268C12.7567 5.8647 12.9016 4.92458 13.2433 4.04886C13.585 3.17313 14.115 2.38321 14.7957 1.73501C15.9751 0.615757 17.5407 -0.0056661 19.1666 3.89365e-05C20.7925 0.00574397 22.3537 0.638138 23.5252 1.76564L25.804 1.76871ZM2.23148 20.8693C5.0831 22.2048 11.7665 23.6551 17.0363 20.8938C21.5618 18.5215 23.8912 13.6469 23.9601 6.40449C23.9632 6.16501 24.039 5.93214 24.1776 5.73677L25.8331 3.38135L25.7703 3.30018C24.977 3.28946 24.1944 3.27874 23.3965 3.30018C23.0854 3.29306 22.7876 3.17272 22.5588 2.96173C21.6772 2.06809 20.4802 1.55594 19.2251 1.53532C17.9699 1.5147 16.7568 1.98726 15.8463 2.85146C15.2615 3.40764 14.8244 4.10067 14.5744 4.86802C14.3244 5.63537 14.2694 6.45289 14.4144 7.2468C14.4411 7.3947 14.4337 7.54673 14.3928 7.69135C14.3519 7.83598 14.2787 7.96939 14.1785 8.08146C14.0826 8.19451 13.9604 8.28227 13.8226 8.33701C13.6848 8.39176 13.5357 8.41181 13.3883 8.39541C9.27355 8.10827 5.40991 6.31116 2.53931 3.34919C1.51322 6.5316 0.211462 14.2135 8.4646 17.232C8.63829 17.2944 8.79054 17.405 8.90342 17.551C9.0163 17.697 9.08509 17.8722 9.1017 18.056C9.12037 18.237 9.08707 18.4195 9.0057 18.5823C8.92433 18.745 8.79825 18.8812 8.64225 18.9749C6.6255 19.9583 4.45886 20.5986 2.23148 20.8693Z"
-                                            fill="#FAFAFA" />
-                                    </svg></a>
-                                <a href="https://www.facebook.com/" target="_blank"><svg class="svg" width="16" height="26" viewBox="0 0 16 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.574 1H10.974C9.38272 1 7.8566 1.63214 6.73138 2.75736C5.60616 3.88258 4.97402 5.4087 4.97402 7V10.6H1.37402V15.4H4.97402V25H9.77402V15.4H13.374L14.574 10.6H9.77402V7C9.77402 6.68174 9.90045 6.37652 10.1255 6.15147C10.3505 5.92643 10.6558 5.8 10.974 5.8H14.574V1Z"
-                                            stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg></a>
-                                <a href="https://www.instagram.com/" target="_blank"><svg class="svg" width="27" height="26" viewBox="0 0 27 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M13.5745 18.3327C14.989 18.3327 16.3456 17.7708 17.3458 16.7706C18.346 15.7704 18.9079 14.4138 18.9079 12.9993C18.9079 11.5849 18.346 10.2283 17.3458 9.22811C16.3456 8.22792 14.989 7.66602 13.5745 7.66602C12.1601 7.66602 10.8035 8.22792 9.80331 9.22811C8.80311 10.2283 8.24121 11.5849 8.24121 12.9993C8.24121 14.4138 8.80311 15.7704 9.80331 16.7706C10.8035 17.7708 12.1601 18.3327 13.5745 18.3327Z"
-                                            stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M1.57422 18.3333V7.66667C1.57422 5.89856 2.2766 4.20286 3.52684 2.95262C4.77708 1.70238 6.47278 1 8.24089 1H18.9076C20.6757 1 22.3714 1.70238 23.6216 2.95262C24.8718 4.20286 25.5742 5.89856 25.5742 7.66667V18.3333C25.5742 20.1014 24.8718 21.7971 23.6216 23.0474C22.3714 24.2976 20.6757 25 18.9076 25H8.24089C6.47278 25 4.77708 24.2976 3.52684 23.0474C2.2766 21.7971 1.57422 20.1014 1.57422 18.3333Z"
-                                            stroke="#FAFAFA" stroke-width="1.5" />
-                                        <path d="M20.9072 5.68068L20.9206 5.66602" stroke="#FAFAFA" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg></a>
+                    </div>
+                    <div class="sliderbox2">
+                        <div class="teamcard">
+                            <img src="./assets/images/webp/teamimage1.webp" alt="slider" class="slider2-image w-100">
+                            <div class="slidertext">
+                                <p class="font-sans-serif fw-normal text-24 lh36 clr-white100 mb-0">Cameron Williamson
+                                </p>
+                                <p class="font-poppins fw-normal text-16 lh24 clr-white100 opacity80 mb-0">CEO & Founder
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-2">
-                    <ul class="mb-0 ps-0">
-                        <li class="company"><a href=""
-                                class="font-poppins fw-normal text-16 lh25_6 clr-white200">Contact Us</a></li>
-                        <li class="about"><a href=""
-                                class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">4517 Washington
-                                Ave. Manchester, Kentucky 39495</a></li>
-                        <li class="about"><a href=""
-                                class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">+123 456 7890, +123
-                                456 7890</a></li>
-                    </ul>
-                </div> -->
             </div>
-        </div>
-    </footer>
+        </section>
+        <!-- FAQS -->
+        <section class="faqpy position-relative" id="FAQs">
+            <div class="faqrightelip position-absolute d-lg-block d-none"><img
+                    src="./assets/images/webp/faqrightelip.webp" alt="elip"></div>
+            <div class="faqrightstar position-absolute d-lg-block d-none"><img
+                    src="./assets/images/webp/faqrightstar.webp" alt="star"></div>
+            <div class="container max-w-1140">
+                <h2 class="font-sans-serif fw-normal text-48 lh56_4 clr-white mb-0 pb53 text-center">Frequently Asked
+                    Questions
+                </h2>
+                <div class="max-w-749 mx-auto" data-aos="zoom-in">
+                    <div class="accordion mx-auto" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="max-w567">Q1. Rhoncus morbi sodales risus eget integer malesuada
+                                        ultricies.
+                                        Magnis at ornare sit netus
+                                        velit.</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div
+                                    class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
+                                    At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                    laoreet
+                                    mattis risus tempus. Imperdiet
+                                    a integer viverra rhoncus viverra nunc.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="max-w567">Q2. Habitant elementum nibh vitae adipiscing volutpat a
+                                        scelerisque neque.
+                                    </span> </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div
+                                    class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
+                                    At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                    laoreet
+                                    mattis risus tempus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="max-w567">Q3. Condimentum cursus urna nulla et eget enim.
+                                    </span> </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div
+                                    class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
+                                    At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                    laoreet
+                                    mattis risus tempus. Imperdiet
+                                    a integer viverra rhoncus viverra nunc.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button position-relative font-sans-serif fw-normal text-20 lh32 clr-white collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                    aria-expanded="false" aria-controls="collapsefour">
+                                    <span class="max-w567">Q4.Vel egestas hendrerit pellentesque molestie fusce aliquet
+                                        gravida proin.
+                                    </span> </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div
+                                    class="accordion-body font-poppins fw-normal text-16 lh25.6 clr-white200 opacity70">
+                                    At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                    laoreet
+                                    mattis risus tempus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="bg-clr-black-100 footerpy" id="ContactUs">
+            <div class="container max-w-1140">
+                <div class="row">
+                    <div class="col-xl-3 col-12">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/images/webp/footerlogo.webp" alt="logo">
+                            <a href="" class="font-Racing-Sans-One fw-normal text-28_33 lh35_7 clr-white200">
+                                The Travel Club
+                            </a>
+                        </div>
+                        <p class="font-poppins fw-normal text-16 lh25_6 clr-white200 opacity70 mb-0 footertext">At
+                            congue
+                            consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna laoreet</p>
+                    </div>
+                    <div class="col-xl-9 col-12 mt-xl-0 mt-4">
+                        <div class="row justify-content-xl-end">
+                            <div class="col-lg-2 col-6">
+                                <ul class="mb-0 ps-0">
+                                    <li class="company"><a href=""
+                                            class="font-poppins fw-normal text-16 lh25_6 clr-white200">Company</a></li>
+                                    <li class="about"><a href="#About"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">About</a>
+                                    </li>
+                                    <li class="about"><a href="#PrivacyPolicy"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li class="about"><a href="#Partnership"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Partnership</a>
+                                    </li>
+                                    <li class="about"><a href="#FAQs"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">FAQ</a>
+                                    </li>
+                                    <li class="contact"><a href="#ContactUs"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <ul class="mb-0 ps-0">
+                                    <li class="company"><a href=""
+                                            class="font-poppins fw-normal text-16 lh25_6 clr-white200">Contact Us</a>
+                                    </li>
+                                    <li class="about"><a href=""
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">4517
+                                            Washington
+                                            Ave. Manchester, Kentucky 39495</a></li>
+                                    <li class="about"><a href=""
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">+123
+                                            456
+                                            7890,
+                                            +123
+                                            456 7890</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-6 d-flex justify-content-lg-end mt-lg-0 mt-4">
+                                <ul class="mb-0 ps-0">
+                                    <li class="company"><a href=""
+                                            class="font-poppins fw-normal text-16 lh25_6 clr-white200">Quick Links</a>
+                                    </li>
+                                    <li class="about"><a href="#Home"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Home</a>
+                                    </li>
+                                    <li class="about"><a href="#About"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">About
+                                        </a>
+                                    </li>
+                                    <li class="about"><a href="#Token"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Token</a>
+                                    </li>
+                                    <li class="about"><a href="#FAQs"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">FAQ</a>
+                                    </li>
+                                    <li class="contact"><a href="#Destinations"
+                                            class="font-poppins fw-normal text-16 lh25_6 opacity80 clr-white200">Popular
+                                            Destinations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-6 mt-lg-0 mt-4">
+                                <p class="company font-poppins fw-normal text-16 lh25_6 clr-white200 mb-0">Social Share
+                                </p>
+                                <div class="d-flex gap-30">
+                                    <a href="https://x.com/i/flow/login" target="_blank"><svg class="svg" width="28"
+                                            height="24" viewBox="0 0 28 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.804 1.76871C26.0929 1.77112 26.3756 1.8525 26.6215 2.00405C26.8675 2.1556 27.0673 2.37154 27.1993 2.62849C27.3313 2.88544 27.3905 3.17361 27.3705 3.46181C27.3505 3.75 27.2521 4.02723 27.0858 4.26348L25.49 6.5316C25.392 14.3207 22.787 19.6089 17.7469 22.2507C15.3451 23.4443 12.6915 24.0426 10.0099 23.9951C6.69401 24.0713 3.41735 23.2659 0.514696 21.6611C0.319433 21.5299 0.168521 21.3425 0.0818546 21.1238C-0.004812 20.9051 -0.0231644 20.6653 0.029217 20.4359C0.078256 20.2031 0.196719 19.9907 0.368972 19.8267C0.541225 19.6626 0.759171 19.5546 0.994049 19.517C2.944 19.2447 4.86417 18.7904 6.72944 18.1601C-1.62937 14.2931 0.193085 5.60046 0.989454 2.9311C1.06709 2.66608 1.21307 2.42615 1.41274 2.23538C1.61241 2.04462 1.85874 1.90973 2.12702 1.84425C2.39529 1.77877 2.67607 1.78501 2.94118 1.86234C3.20628 1.93967 3.44638 2.08537 3.63738 2.28481C6.08413 4.80598 9.32824 6.40233 12.8186 6.80268C12.7567 5.8647 12.9016 4.92458 13.2433 4.04886C13.585 3.17313 14.115 2.38321 14.7957 1.73501C15.9751 0.615757 17.5407 -0.0056661 19.1666 3.89365e-05C20.7925 0.00574397 22.3537 0.638138 23.5252 1.76564L25.804 1.76871ZM2.23148 20.8693C5.0831 22.2048 11.7665 23.6551 17.0363 20.8938C21.5618 18.5215 23.8912 13.6469 23.9601 6.40449C23.9632 6.16501 24.039 5.93214 24.1776 5.73677L25.8331 3.38135L25.7703 3.30018C24.977 3.28946 24.1944 3.27874 23.3965 3.30018C23.0854 3.29306 22.7876 3.17272 22.5588 2.96173C21.6772 2.06809 20.4802 1.55594 19.2251 1.53532C17.9699 1.5147 16.7568 1.98726 15.8463 2.85146C15.2615 3.40764 14.8244 4.10067 14.5744 4.86802C14.3244 5.63537 14.2694 6.45289 14.4144 7.2468C14.4411 7.3947 14.4337 7.54673 14.3928 7.69135C14.3519 7.83598 14.2787 7.96939 14.1785 8.08146C14.0826 8.19451 13.9604 8.28227 13.8226 8.33701C13.6848 8.39176 13.5357 8.41181 13.3883 8.39541C9.27355 8.10827 5.40991 6.31116 2.53931 3.34919C1.51322 6.5316 0.211462 14.2135 8.4646 17.232C8.63829 17.2944 8.79054 17.405 8.90342 17.551C9.0163 17.697 9.08509 17.8722 9.1017 18.056C9.12037 18.237 9.08707 18.4195 9.0057 18.5823C8.92433 18.745 8.79825 18.8812 8.64225 18.9749C6.6255 19.9583 4.45886 20.5986 2.23148 20.8693Z"
+                                                fill="#FAFAFA" />
+                                        </svg></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><svg class="svg" width="16"
+                                            height="26" viewBox="0 0 16 26" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.574 1H10.974C9.38272 1 7.8566 1.63214 6.73138 2.75736C5.60616 3.88258 4.97402 5.4087 4.97402 7V10.6H1.37402V15.4H4.97402V25H9.77402V15.4H13.374L14.574 10.6H9.77402V7C9.77402 6.68174 9.90045 6.37652 10.1255 6.15147C10.3505 5.92643 10.6558 5.8 10.974 5.8H14.574V1Z"
+                                                stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><svg class="svg" width="27"
+                                            height="26" viewBox="0 0 27 26" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.5745 18.3327C14.989 18.3327 16.3456 17.7708 17.3458 16.7706C18.346 15.7704 18.9079 14.4138 18.9079 12.9993C18.9079 11.5849 18.346 10.2283 17.3458 9.22811C16.3456 8.22792 14.989 7.66602 13.5745 7.66602C12.1601 7.66602 10.8035 8.22792 9.80331 9.22811C8.80311 10.2283 8.24121 11.5849 8.24121 12.9993C8.24121 14.4138 8.80311 15.7704 9.80331 16.7706C10.8035 17.7708 12.1601 18.3327 13.5745 18.3327Z"
+                                                stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M1.57422 18.3333V7.66667C1.57422 5.89856 2.2766 4.20286 3.52684 2.95262C4.77708 1.70238 6.47278 1 8.24089 1H18.9076C20.6757 1 22.3714 1.70238 23.6216 2.95262C24.8718 4.20286 25.5742 5.89856 25.5742 7.66667V18.3333C25.5742 20.1014 24.8718 21.7971 23.6216 23.0474C22.3714 24.2976 20.6757 25 18.9076 25H8.24089C6.47278 25 4.77708 24.2976 3.52684 23.0474C2.2766 21.7971 1.57422 20.1014 1.57422 18.3333Z"
+                                                stroke="#FAFAFA" stroke-width="1.5" />
+                                            <path d="M20.9072 5.68068L20.9206 5.66602" stroke="#FAFAFA"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topBtn d-flex align-items-center justify-content-center bg-clr-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#000000"
+                    class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                    <path fill-rule="evenodd"
+                        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                </svg>
+            </div>
+        </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
-        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+            integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>
