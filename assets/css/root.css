@@ -21,9 +21,15 @@
     --fc-black: #000000;
     --fc-black-100: #010101;
     --fc-blue: #1219d2;
+    --fc-darkblue:#1B32A5;
+    --fc-light-blue:#2196f3;
+    --fc-navyblue:#1219D233;
     --page-bg-clr: #140d1b;
     --nav-bg: #242451;
     --travelbox-border: #757696;
+    --travelboxborder:#FDFDFD66;
+    --date-bg:#ffffff14;
+    --travelbox-bg:#1B173B;
     --travelinput-border: #aaaab7;
     --gray: #8988a2;
     --gray100: #d2d0e0;
