@@ -1,0 +1,156 @@
+:root {
+    /* font-size */
+    --fs-sm: 10px;
+    --fs-md: 14px;
+    --fs-mmd: 14px;
+    --fs-2md: 15px;
+    --fs-lg: 24px;
+    --fs-llg: 28.33px;
+    --fs-2lg: 22px;
+    --fs-xl: 25px;
+    --fs-xxl: 28px;
+    --fs-2xl: 38px;
+
+    /* font-color */
+    --fc-white: #ffffff;
+    --fc-off-white: #fafafa;
+    --white100:#fcfffe;
+    --white200: #FAFAFA;
+    --blur-white: #01010140;
+    --input-clr:#fdfdfe;
+    --fc-black: #000000;
+    --fc-black-100: #010101;
+    --fc-blue: #1219d2;
+    --page-bg-clr: #140d1b;
+    --nav-bg: #242451;
+    --travelbox-border: #757696;
+    --travelinput-border: #aaaab7;
+    --gray: #8988a2;
+    --gray100: #d2d0e0;
+    --gray200: #d0cfde;
+    --light-blue: #696cdf;
+    --purple: #5c368a;
+    --piech: #e66e9a;
+    --yellow: #d1b35e;
+    --green: #98dab3;
+    --accordiontext:#b5b3b7;
+
+}
+
+.clr-white {
+    color: var(--fc-white);
+}
+
+.clr-off-white {
+    color: var(--fc-off-white);
+}
+.clr-white100 {
+    color: var(--white100);
+}
+.clr-white200 {
+    color: var(--white200);
+}
+.clr-black {
+    color: var(--fc-black);
+}
+
+.clr-gray {
+    color: var(--gray);
+}
+
+.clr-gray100 {
+    color: var(--gray100);
+}
+
+.clr-gray200 {
+    color: var(--gray200);
+}
+.clr-gray300{
+    color: var(--accordiontext);
+}
+
+/* bg clr */
+.bg-clr-white {
+    background-color: var(--fc-white);
+}
+
+.bg-clr-black {
+    background-color: var(--fc-black);
+}
+.bg-clr-black-100 {
+    background-color: var(--fc-black-100);
+}
+
+.bg-pageclr {
+    background-color: var(--page-bg-clr);
+}
+
+/* font size */
+.text-10 {
+    font-size: var(--fs-sm);
+}
+
+.text-14 {
+    font-size: var(--fs-md);
+}
+
+.text-16 {
+    font-size: var(--fs-mmd);
+}
+
+.text-20 {
+    font-size: var(--fs-2md);
+}
+
+.text-24 {
+    font-size: var(--fs-lg);
+}
+
+.text-28_33 {
+    font-size: var(--fs-llg);
+}
+
+.text-32 {
+    font-size: var(--fs-2lg);
+}
+
+.text-36 {
+    font-size: var(--fs-xl);
+}
+
+.text-48 {
+    font-size: var(--fs-xxl);
+}
+
+.text-64 {
+    font-size: var(--fs-2xl);
+}
+
+@media(min-width:576px) {
+    :root {
+        --fs-mmd: 16px;
+        --fs-2md: 20px;
+        --fs-2lg: 32px;
+        --fs-xxl: 36px;
+        --fs-xxl: 38px;
+        --fs-2xl: 50px;
+    }
+}
+
+@media(min-width:768px) {
+    :root {
+        --fs-2xl: 50px;
+    }
+}
+
+@media(min-width:992px) {
+    :root {
+        --fs-mmd: 16px;
+        --fs-lg: 24px;
+        --fs-llg: 28.33px;
+        --fs-2lg: 32px;
+        --fs-xl: 36px;
+        --fs-xxl: 48px;
+        --fs-2xl: 64px;
+    }
+}
